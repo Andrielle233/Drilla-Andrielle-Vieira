@@ -1,0 +1,316 @@
+:root {
+    --bg-pink: #fbe6ec;
+    --main-pink: #e49aa9;
+    --dark-pink: #c06382;
+    --white: #ffffff;
+    --text-dark: #000000;
+    --text-light: #403035;
+    --overlay-pink: rgba(228, 154, 169, 0.6);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--white);
+    color: var(--text-dark);
+    font-family: "Kaisei HarunoUmi", serif ;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+.topo {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+    padding: 15px 5%;
+    background-color: var(--main-pink);
+}
+
+.logo img {
+    height: 80px;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: var(--text-dark);
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 0.8rem;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+}
+
+.menu a:hover {
+    opacity: 0.7;
+}
+
+.carrinho img {
+    height: 25px;
+    cursor: pointer;
+}
+
+.menu a:hover{
+    color: #ff4da6;
+}
+
+.menu .ativo{
+    color: #ff4da6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+.secao-titulo {
+    background-color: #fbe2e5;
+    text-align: center;
+    padding: 15px;
+    margin-bottom: 40px;
+}
+
+.secao-titulo h2 {
+    font-size: 1.5rem;
+    font-weight: 500;
+    letter-spacing: 4px;
+    color: #000000;
+}
+
+.main-container {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 0 20px;
+            display: grid;
+            gap: 30px;
+        }
+
+        .intro-section h2 {
+            font-size: 20px;
+            margin-bottom: 10px;
+            color: #000000;
+        }
+
+        .intro-section p {
+            font-size: 14px;
+            color: #333333;
+            line-height: 1.4;
+        }
+
+        .form-box {
+            display: grid;
+            gap: 15px;
+        }
+
+        .form-title {
+            font-weight: bold;
+            font-size: 14px;
+        }
+
+        .form-grid {
+            display: grid;
+            gap: 15px;
+            margin-bottom: 5px;
+        }
+
+        .input-group {
+            display: grid;
+            grid-template-columns: 160px 1fr;
+            align-items: center;
+        }
+
+        .form-label {
+            font-size: 14px;
+            color: #000000;
+        }
+
+        .form-input {
+            width: 100%;
+            height: 35px;
+            padding: 5px 10px;
+            border: 1px solid #cccccc;
+            border-radius: 4px;
+            font-size: 14px;
+            outline: none;
+        }
+
+        .checkbox-group {
+            display: grid;
+            grid-template-columns: auto 1fr;
+            gap: 8px;
+            align-items: center;
+            font-size: 12px;
+            color: #333333;
+        }
+
+        .submit-button {
+            background-color: #f7b1c1;
+            color: #000000;
+            border: none;
+            padding: 12px 24px;
+            font-size: 11px;
+            font-weight: bold;
+            text-transform: uppercase;
+            cursor: pointer;
+            justify-self: start;
+            border-radius: 4px;
+        }
+
+        .login-link-section {
+            display: grid;
+            gap: 5px;
+            font-size: 14px;
+        }
+
+        .login-text {
+            color: #333333;
+        }
+
+        .login-link {
+            color: #000000;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        .benefits-section {
+            display: grid;
+            gap: 10px;
+            margin-top: 10px;
+        }
+
+        .benefits-title {
+            font-weight: bold;
+            font-size: 14px;
+            color: #000000;
+        }
+
+        .benefits-list {
+            display: grid;
+            gap: 8px;
+            font-size: 14px;
+            color: #333333;
+        }
+
+        .rodape {
+    background-color: var(--bg-pink);
+    padding: 50px 5%;
+    color: var(--text-dark);
+}
+
+.grade-rodape {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.info-rodape h2 {
+    color: var(--dark-pink);
+    margin-bottom: 15px;
+}
+
+.info-rodape p {
+    font-size: 0.9rem;
+    margin-bottom: 8px;
+    color: #444;
+}
+
+.info-rodape .texto-legal {
+    font-style: italic;
+    margin-top: 20px;
+}
+
+.info-rodape .direitos {
+    font-size: 0.75rem;
+    color: #666;
+    margin-top: 15px;
+}
+
+.caixa-contato {
+    background-color: var(--white);
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+}
+
+.caixa-contato h3 {
+    margin-bottom: 20px;
+    color: var(--dark-pink);
+    font-weight: 500;
+}
+
+.formulario-contato {
+    display: grid;
+    gap: 15px;
+}
+
+.formulario-contato input, 
+.formulario-contato textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #e0e0e0;
+    border-radius: 4px;
+    font-size: 0.9rem;
+}
+
+.formulario-contato button {
+    background-color: var(--dark-pink);
+    color: var(--white);
+    border: none;
+    padding: 12px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background 0.3s;
+}
+
+.formulario-contato button:hover {
+    background-color: var(--main-pink);
+}
+
+@media (max-width: 768px) {
+    .topo {
+        grid-template-columns: 1fr;
+        text-align: center;
+        gap: 15px;
+    }
+    .menu {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .banner {
+        grid-template-columns: 1fr;
+    }
+    .banner-images {
+        display: none;
+    }
+    .grade-rodape {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+}
+.menu a:hover{
+    color: #d988db;
+}
+
+.menu .ativo{
+    color: #d988db;
+}
+
+#ativo{
+    color: #d988db;
+}
